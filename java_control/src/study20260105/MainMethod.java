@@ -3,7 +3,10 @@ package study20260105;
 public class MainMethod {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		double  num = Math.random();
+		
+		System.out.println(num);
 
 	}
 
