@@ -126,9 +126,23 @@ public class LoopMain {
 //	  게임을 진행 하면서 1판 끝날때마다
 //	  몇승, 몇패, 몇무 출력하기
 //	  
-      Sytem.out.println("1번: 가위 ")
+      Sytem.out.println("1번: 가위 2번:바위, 3번:보");
 	  for(int i =1; i>=15; i++) {
+		  System.out.println();
+		  else
+		   system.out.println(i);
 		  int com =(int)Math.floor(Math.random ()*3)+1;
+		
+			 if(com == 1 && user == 2);
+				 System.out.println("무승부");
+			 System.out.println("승:0,패:0,무:1");
+			 break;
+			 
+			 else(com == 3 && user == 1)
+			 System.out.println("승:0,패:1,무:0");
+			 break;
+			 
+			 		
 	  
 	
 	  }
@@ -157,5 +171,6 @@ public class LoopMain {
      for ( Member m : MemberList){
      
 */
+
 
 
