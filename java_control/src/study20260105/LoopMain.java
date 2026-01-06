@@ -97,25 +97,25 @@ public class LoopMain {
 //		  if( num == 11) break;
 //	  }
 
-      int com = (int)Math.floor(Math.random() * 50) + 1;
-      
-      while(true) {
-    	  System.out.println("1~50 중 입력 : ");
-    	  int user = scan.nextInt();
-    	  
-    	  if( user > com ) {
-    		  System.out.println("DOWN");
-      }
-    	  if(user < com) {
-    		  System.out.println("UP"); 
-      }
-    	  if (user == com) {
-    		  System.out.println(" 정답 !");
-    		  break;
-    	  }
-
-
-      }}}
+//      int com = (int)Math.floor(Math.random() * 50) + 1;
+//      
+//      while(true) {
+//    	  System.out.println("1~50 중 입력 : ");
+//    	  int user = scan.nextInt();
+//    	  
+//    	  if( user > com ) {
+//    		  System.out.println("DOWN");
+//      }
+//    	  if(user < com) {
+//    		  System.out.println("UP"); 
+//      }
+//    	  if (user == com) {
+//    		  System.out.println(" 정답 !");
+//    		  break;
+//    	  }
+//
+//
+//      }}}
 
 
 
@@ -126,23 +126,27 @@ public class LoopMain {
 //	  게임을 진행 하면서 1판 끝날때마다
 //	  몇승, 몇패, 몇무 출력하기
 //	  
-      Sytem.out.println("1번: 가위 2번:바위, 3번:보");
-	  for(int i =1; i>=15; i++) {
-		  System.out.println();
-		  else
-		   system.out.println(i);
-		  int com =(int)Math.floor(Math.random ()*3)+1;
+		int com = 0;
+      System.out.println("1번: 가위 2번:바위, 3번:보");
+    int w=0,l=0,d=0;
+	  for(int i =1; i<=15; i++) {
+		  System.out.println("숫자를 입력하세요");
+		  int user = scan.nextInt();
+		  
+		   System.out.println(i);
+		   com =(int)Math.floor(Math.random ()*3)+1;
 		
-			 if(com == 1 && user == 2);
+			 if(com == user ){
 				 System.out.println("무승부");
-			 System.out.println("승:0,패:0,무:1");
-			 break;
+			 System.out.println("승"+w+"패"+l+"무"+d);
+		     d++;
+			 }
+			 else if((com == 3 && user == 2)|| (com == 1 && user == 3)||(com == 2 && user == 1)) {
+			 System.out.println("승:0,패:0,무:0");
 			 
-			 else(com == 3 && user == 1)
-			 System.out.println("승:0,패:1,무:0");
-			 break;
-			 
-			 		
+			 }
+			 else 
+				 System.out.println("승:1,패:0,무:0");
 	  
 	
 	  }
