@@ -14,21 +14,28 @@ public class LoopMain2 {
 		int com1 = (int)Math.floor(Math.random()*9) + 1, com2=0, com3=0;
 		
 		
-	 while(true) { //숫자 3개 중복없이 나오게 하기
-		  com2 = (int)Math.floor(Math.random() *9) + 1;
-		  com3 = (int)Math.floor(Math.random() *9) +1 ;
-	 	 	if( com1 != com2 && com1 != com3 && com2 != com3  ) 
-	 	 		break;
-		}
-	       
+//	 while(true) { //숫자 3개 중복없이 나오게 하기
+//		  com2 = (int)Math.floor(Math.random() *9) + 1;
+//		  com3 = (int)Math.floor(Math.random() *9) + 1 ;
+//	 	 	if( com1 != com2 && com1 != com3 && com2 != com3  ) break;
+//	 	 
+//	 	 		
+//		}
+		
+		do {
+			com2 = (int)Math.floor(Math.random() * 9) + 1;
+			com3 = (int)Math.floor(Math.random() * 9) + 1;
+		}while (!( com1 != com2 && com1 != com3 && com2 != com3 ) );
+		
+       
 	//  System.out.println(com1+" "+com2+" "+com3);   
 	 
 	   while(true) {
 		   int str=0 , ball=0;
 		   System.out.println("1~9 중에 숫자 세개 입력 : ");
-		   int user1 = scan.nextInt(7);
-		   int user2 = scan.nextInt(8);
-		   int user3 = scan.nextInt(9);
+		   int user1 = scan.nextInt();
+		   int user2 = scan.nextInt();
+		   int user3 = scan.nextInt();
 		   
 		   if (com1 == user1) str++;
 		   if (com2 == user2) str++;
