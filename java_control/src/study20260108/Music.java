@@ -2,14 +2,18 @@ package study20260108;
 
 public class Music {
 	String MusicName;
-    String singer;
-    int time;
+    String artist;
+    int duration;
     
 	
-	Music(String MusicName,String singer,int time){
-	    this. MusicName=MusicName;
+	Music(String MusicName,String artist,int duration){
 	    
-	    System.out.println("Music.name");
+		this.MusicName=MusicName;
+		this.artist=artist;
+		this.duration=duration;
+	     
+			  
+	   
 	    }
 		
 	}

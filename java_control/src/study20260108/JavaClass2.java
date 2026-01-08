@@ -26,7 +26,13 @@ public class JavaClass2 {
 		// 매개변수 있는 생성자 메서드로 데이터 저장하고 
 		// 출력하기 
 		
-
+      Music music = new Music("천상연","이창섭",4);
+      
+      System.out.println("music.title");
+      System.out.println("music.artist");
+      System.out.println("music.duration");
+      
+      
 	}
 
 }
