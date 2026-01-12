@@ -3,14 +3,14 @@ package study20260109;
 public class test {
 
 	public static void main(String[] args) {
-		 int num=0;
+		 
 		 String name="홍길동";
 		 int age=25;
-		 double sum=175.5;
+		 double height=175.5;
 		 String gender="남";
-		 boolean student=true;
+		 boolean isstudent=true;
 		 
-		 System.out.println(0);
+	
 		 System.out.println("홍길동");
 		 System.out.println(25);
 		 System.out.println(175.5);
@@ -32,8 +32,8 @@ public class test {
 		
 		
 		int Width =8;
-		int height=5;
-		System.out.println(Width*height);
+		int height1=5;
+		System.out.println(Width*height1);
 		
 		
 		
