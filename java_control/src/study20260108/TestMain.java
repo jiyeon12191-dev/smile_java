@@ -26,14 +26,12 @@ public class TestMain {
 		// 3반 학생들 성적의 평균값을 구하세요
 		// 반복문 이용 하여 하세요!! 반드시!!!
 		
-//		 int avg=0;
-//		 
-//	     for(int i=0; i<=7; i++) {
+	 	 
 //	    	int[] score = {99,66,77,56,78,98,83};
 //	    	int total=0; // 성적의 총합을 저장 할 변수
 //	    	
 //	    for( int i=0 i<score.length; i++) {
-//	    	total= tatal + score[i]	    	
+//	    	total= tatal + score[i];	    	
 //	    	
 //	    }
 //	    	int avg = total / score.length;
@@ -48,7 +46,7 @@ public class TestMain {
 				  
 			  }
 	    	
-	    	System.out.print("첫번째 값 : "+num[0]+" 두번째값 : "+num[9]);
+	    	System.out.print("첫번째 값 : "+num[0]+" 두번째값 : "+num[num.length-1]);
 	    	
 	    	//문제 4. 문제3번의 배열에 저장된 무작위 정수 중 짝수에 해당하는 정수만 출력하세요
 	    	
@@ -71,7 +69,7 @@ public class TestMain {
 	   // ( 가장 높은 기온, 가장 낮은 기온 만 찾아서 출력 하는것만 해도 성공!!)
 	  
 	        // 힌트 int max = temp[0];
-	    	//       int min = temp[0];
+	    	//     int min = temp[0];
 	    	
 	    	
 	    	int[] temp = {6,0,5,-2,0,4,8,0};

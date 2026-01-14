@@ -34,13 +34,13 @@ public class Work {
 
 				
 
-				Scanner kbd = new Scanner(System.in);
+				Scanner sc = new Scanner(System.in);
 
 				
 
 				System.out.println("예약 인원수 : ");
 
-				int personCnt = kbd.nextInt();
+				int personCnt = sc.nextInt();
 
 				
 
@@ -48,7 +48,7 @@ public class Work {
 
 				System.out.println("원하는 위치 입력 : ");
 
-				int pos = kbd.nextInt();
+				int pos = sc.nextInt();
 
 				
 

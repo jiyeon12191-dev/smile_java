@@ -4,7 +4,7 @@ public class Music {
 	String MusicName;
     String artist;
     int duration;
-    
+    Music(){}
 	
 	Music(String MusicName,String artist,int duration){
 	    

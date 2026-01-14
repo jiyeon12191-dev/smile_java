@@ -1,8 +1,12 @@
 package study20260108;
 
+import study20260109.Member;
+
 public class JavaClass2 {
 
 	public static void main(String[] args) {
+		
+		Member member = new Member();
 	
 		Movie movie = new Movie();
 		// new 	Movie() 생성자 메서드
