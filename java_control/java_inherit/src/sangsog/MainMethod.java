@@ -56,7 +56,7 @@ public class MainMethod {
 		app1 = air;
 		
 		Appliance app2 = new Television();
-		app2.ch=34;
+		((Television)app2).ch=34;
 		
 		Appliance app3 = new Refrigerator();
 		Appliance app4 = new Aircon();
