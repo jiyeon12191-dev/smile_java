@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -17,13 +18,24 @@ public class _Exec {
 			String menu = sc.nextLine();
 			switch(menu) {
 			case "1":
-				System.out.println("- 목록 -");	
+				StudentDAO dao = new StudentDAO();
+				List<StudentDTO> list = dao.getSelectAll();
+				System.out.println("gkrqjs \t 이름 \t 주민번호 \t 연락처\t 주소 \t 등록일");
+				for(int i=0; i<list.size(); i++) {
+					list.get(i).display();
+				}
 				break;
 			case "2":
-				System.out.println("- 상세보기 -");
+				dao.inputField("view");
+				StudentDTO resultDTO = dao.getselectOne(dao);
+				resultDTO.display();
 				break;
 			case "3":
-				// StudentDTO studentDTO = new StudentDTO();
+				dao.inputField("chuga");
+				//StudentDAO dao= new StudentDAO();
+				 result = dao.setInsert(dao);
+				System.out.println("result : " + result);
+				break;
 				//DB작업
 				
 				String name = "이성순";
@@ -38,14 +50,15 @@ public class _Exec {
 				
 			//	StudentDTO dto= new StudentDTO();
 				StudentDAO dao= new StudentDAO();
-				int result = dao.setInsert(map);
+				 result = dao.setInsert(dao);
 				System.out.println("result : " + result);
 				break;
 			case "4":
-				System.out.println("- 수정 -");
+				System.setOut(null);
 				break;
 			case "5":
-				System.out.println("- 삭제 -");
+			dto.inputField("- 삭제 -");
+			 result = dao.setDdelete(dto);				
 				break;	
 			default:
 				System.out.println("- 프로그램 종료 -");

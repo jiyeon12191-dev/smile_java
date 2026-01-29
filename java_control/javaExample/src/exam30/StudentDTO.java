@@ -1,5 +1,6 @@
 package exam30;
 
+import java.sql.Date;
 import java.util.Scanner;
 
 public class StudentDTO {
@@ -9,15 +10,22 @@ public class StudentDTO {
 	   private String phone; 
 	   private String adress; 
 	   private String createdDate;
+	   private String hakbun_;
 	   
 	   
 	   public StudentDTO() {
-		   inputField();
+		
 		
 	}
 	   // method
 	   public void inputField() {
 		   Scanner sc = new Scanner(System.in);
+		  
+		   if (gubun.equals("view") || gubun.equals("sujung")|| gubun.equals("sakje")) {
+			   System.out.print(" 학번 : ");
+			  String.hakbun = sc.nextLine();  
+			  this.hakbun = Integer.parseInt(hakbun_);
+		   }else if(gubun.equals("chuga")){
 		   System.out.println("이름 : ");
 		   this.name = sc.nextLine();
 		   System.out.println("주민번호 : ");
@@ -26,7 +34,13 @@ public class StudentDTO {
 		   this.phone = sc.nextLine();
 		   System.out.println("주소 : ");
 		   this.adress = sc.nextLine();
+		   else if ("sujung")){
+			   System.out.println("전화번호 : ");
+		   }
 		   
+	   }
+	   public void display() {
+		   System.out.printf("%d \t %s \t %s \t,%s \t %s,\t %s\n",hakbun, name, ssn, phone, adress, createdDate");
 	   }
 	  
 	   public int getHakbun() {
@@ -62,8 +76,8 @@ public class StudentDTO {
 	   public String getCreatedDate() {
 		   return createdDate;
 	   }
-	   public void setCreatedDate(String createdDate) {
-		   this.createdDate = createdDate;
+	   public void setCreatedDate(Date Date) {
+		   this.createdDate = Date;
 	   }
 	   
 	   
