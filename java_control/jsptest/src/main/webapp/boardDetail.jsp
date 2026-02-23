@@ -5,8 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
-
 </head>
 <body>
 
@@ -14,12 +12,15 @@
 <jsp:include page="menu.jsp"/>
   
    <main id="main">
-     <p>여기가 첫페이지이다.</p>
-     <img src="https://picsum.photos/400/300">
+     <p>여기는 게시판 상세페이지</p>
+    
    </main>
-
+   
 </div>
-         
+
+
+
+
 
 </body>
 </html>

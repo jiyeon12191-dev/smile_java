@@ -10,7 +10,7 @@
              <a href="main.jsp">HOME</a>
           </li>
           <li class="menu">
-             <a href="board.jsp">게시판</a>
+             <a href="/board/list.do">게시판</a>
           </li>
           <li class="menu">
              <a href="Login.jsp">로그인</a>
